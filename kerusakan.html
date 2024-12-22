@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+
+<!-- 
+  Theme Name: Enlight
+  Theme URL: https://probootstrap.com/enlight-free-education-responsive-bootstrap-website-template
+  Author: ProBootstrap.com
+  Author URL: https://probootstrap.com
+  License: Released for free under the Creative Commons Attribution 3.0 license (probootstrap.com/license)
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tentang</title>
+
+    <link href="img/favicon.png" rel="icon" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700|Open+Sans"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/2.1.8/css/dataTables.bootstrap5.css"
+    />
+    <link rel="stylesheet" href="css/styles-merged.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+
+    <!--[if lt IE 9]>
+      <script src="js/vendor/html5shiv.min.js"></script>
+      <script src="js/vendor/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="probootstrap-search" id="probootstrap-search">
+      <a href="#" class="probootstrap-close js-probootstrap-close"
+        ><i class="icon-cross"></i
+      ></a>
+      <form action="#">
+        <input
+          type="search"
+          name="s"
+          id="search"
+          placeholder="Search a keyword and hit enter..."
+        />
+      </form>
+    </div>
+
+    <div class="probootstrap-page-wrapper">
+      <!-- Fixed navbar -->
+      <div class="container">
+        <div class="navbar-header">
+          <div class="btn-more js-btn-more visible-xs">
+            <a href="#"><i class="icon-dots-three-vertical"></i></a>
+          </div>
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#navbar-collapse"
+            aria-expanded="false"
+            aria-controls="navbar"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html" title="ProBootstrap:Enlight"
+            >Pantau Bencana</a
+          >
+        </div>
+
+        <nav class="navbar navbar-default probootstrap-navbar">
+          <div class="container">
+            <div class="navbar-header">
+              <div class="btn-more js-btn-more visible-xs">
+                <a href="#"><i class="icon-dots-three-vertical"></i></a>
+              </div>
+              <button
+                type="button"
+                class="navbar-toggle collapsed"
+                data-toggle="collapse"
+                data-target="#navbar-collapse"
+                aria-expanded="false"
+                aria-controls="navbar"
+              >
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+
+            <div id="navbar-collapse" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="index.html">Beranda</a></li>
+                <li class="dropdown">
+                  <a href="#" data-toggle="dropdown" class="dropdown-toggle"
+                    >Tentang</a
+                  >
+                  <ul class="dropdown-menu">
+                    <li><a href="sig.html">SIG</a></li>
+                    <li><a href="semarang.html">Kabupaten Semarang</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" data-toggle="dropdown" class="dropdown-toggle"
+                    >Peta Digitasi</a
+                  >
+                  <ul class="dropdown-menu">
+                    <li><a href="bencana.html">Bencana Alam</a></li>
+                    <li><a href="kerusakan.html">Kerusakan Rumah</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <section
+        class="probootstrap-section probootstrap-section-colored"
+        style="background-color: #563a9c"
+      >
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-md-12 text-left section-heading probootstrap-animate"
+            >
+              <h1>Kerusakan Rumah</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="probootstrap-section">
+        <div class="container">
+          <div class="row">
+            <!-- Kolom pertama untuk iframe dan screenshot 2022 -->
+            <div class="col-md-6 col-12 mb-4">
+              <div class="probootstrap-iframe-wrapper probootstrap-animate">
+                <iframe
+                  src="kerusakan-2022/index.html"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                  style="width: 100%; height: 315px; border-radius: 8px"
+                ></iframe>
+                <div class="text-center mt-2">
+                  <p><strong>Tahun: 2022</strong></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Kolom kedua untuk iframe dan screenshot 2023 -->
+            <div class="col-md-6 col-12 mb-4">
+              <div class="probootstrap-iframe-wrapper probootstrap-animate">
+                <iframe
+                  src="kerusakan-2023/index.html"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                  style="width: 100%; height: 315px; border-radius: 8px"
+                ></iframe>
+                <div class="text-center mt-2">
+                  <p><strong>Tahun: 2023</strong></p>
+                </div>
+              </div>
+            </div>
+            <label for="tahun">Pilih Tahun: </label>
+            <select id="tahun" onchange="filterTahun()">
+              <option value="2023">2023</option>
+              <option value="2022">2022</option>
+            </select>
+            <div class="table-wrapper">
+              <table id="dataKerusakan">
+                <thead>
+                  <tr>
+                    <th>No</th>
+                    <th>Kecamatan</th>
+                    <th>Kebakaran</th>
+                    <th>Longsor</th>
+                    <th>Angin</th>
+                    <th>Jumlah</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- Data tahun 2023 -->
+                  <tr data-tahun="2023">
+                    <td>1</td>
+                    <td>Ambarawa</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>6</td>
+                  </tr>
+                  <tr data-tahun="2023">
+                    <td>2</td>
+                    <td>Bancak</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>10</td>
+                    <td>11</td>
+                  </tr>
+                  <tr data-tahun="2023">
+                    <td>3</td>
+                    <td>Bandungan</td>
+                    <td>2</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>6</td>
+                  </tr>
+                  <tr data-tahun="2023">
+                    <td>4</td>
+                    <td>Banyubiru</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>1</td>
+                  </tr>
+                  <tr data-tahun="2023">
+                    <td>5</td>
+                    <td>Bawen</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>1</td>
+                  </tr>
+                  <tr data-tahun="2023">
+                    <td>6</td>
+                    <td>Bergas</td>
+                    <td>7</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>8</td>
+                  </tr>
+                  <tr data-tahun="2023">
+                    <td>7</td>
+                    <td>Bringin</td>
+                    <td>8</td>
+                    <td>1</td>
+                    <td>4</td>
+                    <td>13</td>
+                  </tr>
+                  <tr data-tahun="2023">
+                    <td>8</td>
+                    <td>Getasan</td>
+                    <td>2</td>
+                    <td>12</td>
+                    <td>5</td>
+                    <td>19</td>
+                  </tr>
+                  <tr data-tahun="2023">
+                    <td>9</td>
+                    <td>Jambu</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>5</td>
+                  </tr>
+                  <tr data-tahun="2023">
+                    <td>10</td>
+                    <td>Kaliwungu</td>
+                    <td>8</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>8</td>
+                  </tr>
+                  <tr data-tahun="2023">
+                    <td>11</td>
+                    <td>Pabelan</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>4</td>
+                    <td>4</td>
+                  </tr>
+                  <tr data-tahun="2023">
+                    <td>12</td>
+                    <td>Pringapus</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>3</td>
+                    <td>5</td>
+                  </tr>
+                  <tr data-tahun="2023">
+                    <td>13</td>
+                    <td>Sumowono</td>
+                    <td>2</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>11</td>
+                  </tr>
+                  <tr data-tahun="2023">
+                    <td>14</td>
+                    <td>Suruh</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>2</td>
+                  </tr>
+                  <tr data-tahun="2023">
+                    <td>15</td>
+                    <td>Susukan</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>5</td>
+                  </tr>
+                  <tr data-tahun="2023">
+                    <td>16</td>
+                    <td>Tengaran</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>5</td>
+                    <td>9</td>
+                  </tr>
+                  <tr data-tahun="2023">
+                    <td>17</td>
+                    <td>Tuntang</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>3</td>
+                  </tr>
+                  <tr data-tahun="2023">
+                    <td>18</td>
+                    <td>Ungaran Barat</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>5</td>
+                    <td>6</td>
+                  </tr>
+                  <tr data-tahun="2023">
+                    <td>19</td>
+                    <td>Ungaran Timur</td>
+                    <td>1</td>
+                    <td>8</td>
+                    <td>2</td>
+                    <td>11</td>
+                  </tr>
+
+                  <!-- Data tahun 2022 -->
+                  <tr data-tahun="2022">
+                    <td>1</td>
+                    <td>Ambarawa</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>3</td>
+                  </tr>
+                  <tr data-tahun="2022">
+                    <td>2</td>
+                    <td>Bancak</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                  </tr>
+                  <tr data-tahun="2022">
+                    <td>3</td>
+                    <td>Bandungan</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>6</td>
+                  </tr>
+                  <tr data-tahun="2022">
+                    <td>4</td>
+                    <td>Banyubiru</td>
+                    <td>0</td>
+                    <td>7</td>
+                    <td>0</td>
+                    <td>7</td>
+                  </tr>
+                  <tr data-tahun="2022">
+                    <td>5</td>
+                    <td>Bawen</td>
+                    <td>1</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>8</td>
+                  </tr>
+                  <tr data-tahun="2022">
+                    <td>6</td>
+                    <td>Bergas</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>3</td>
+                  </tr>
+                  <tr data-tahun="2022">
+                    <td>7</td>
+                    <td>Bringin</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>1</td>
+                  </tr>
+                  <tr data-tahun="2022">
+                    <td>8</td>
+                    <td>Getasan</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>23</td>
+                    <td>25</td>
+                  </tr>
+                  <tr data-tahun="2022">
+                    <td>9</td>
+                    <td>Jambu</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                  </tr>
+                  <tr data-tahun="2022">
+                    <td>10</td>
+                    <td>Kaliwungu</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>3</td>
+                  </tr>
+                  <tr data-tahun="2022">
+                    <td>11</td>
+                    <td>Pabelan</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>5</td>
+                  </tr>
+                  <tr data-tahun="2022">
+                    <td>12</td>
+                    <td>Pringapus</td>
+                    <td>1</td>
+                    <td>6</td>
+                    <td>1</td>
+                    <td>8</td>
+                  </tr>
+                  <tr data-tahun="2022">
+                    <td>13</td>
+                    <td>Sumowono</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>4</td>
+                  </tr>
+                  <tr data-tahun="2022">
+                    <td>14</td>
+                    <td>Suruh</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>4</td>
+                  </tr>
+                  <tr data-tahun="2022">
+                    <td>15</td>
+                    <td>Susukan</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>3</td>
+                  </tr>
+                  <tr data-tahun="2022">
+                    <td>16</td>
+                    <td>Tengaran</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>6</td>
+                    <td>8</td>
+                  </tr>
+                  <tr data-tahun="2022">
+                    <td>17</td>
+                    <td>Tuntang</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>2</td>
+                  </tr>
+                  <tr data-tahun="2022">
+                    <td>18</td>
+                    <td>Ungaran Barat</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>3</td>
+                    <td>4</td>
+                  </tr>
+                  <tr data-tahun="2022">
+                    <td>19</td>
+                    <td>Ungaran Timur</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>1</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="probootstrap-footer probootstrap-bg">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="probootstrap-footer-widget">
+                <h3>Info Kontak</h3>
+                <ul class="probootstrap-contact-info">
+                  <li>
+                    <i class="icon-location2"></i>
+                    <span>Purwodadi, Grobogan-Jawa Tengah</span>
+                  </li>
+                  <li>
+                    <a href="mailto:radalutfim9@gmail.com">
+                      <i class="icon-mail"></i>
+                      <span>radalutfim9@gmail.com</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="tel:+6287718545144">
+                      <i class="icon-phone2"></i>
+                      <span>+62 877-1854-5144</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://github.com/radalutfi"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i class="icon-github"></i>
+                      <span>radalutfi</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- END row -->
+        </div>
+      </footer>
+    </div>
+    <!-- END wrapper -->
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
+    <script src="https://cdn.datatables.net/2.1.8/js/dataTables.bootstrap5.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#dataKerusakan").DataTable();
+      });
+
+      function filterTahun() {
+        const tahun = document.getElementById("tahun").value;
+        const rows = document.querySelectorAll("#dataKerusakan tbody tr");
+
+        rows.forEach((row) => {
+          if (row.getAttribute("data-tahun") === tahun) {
+            row.style.display = "";
+          } else {
+            row.style.display = "none";
+          }
+        });
+
+        // Menginisialisasi ulang DataTables setelah filter
+        $("#dataKerusakan").DataTable().destroy();
+        $("#dataKerusakan").DataTable();
+      }
+
+      // Inisialisasi untuk menampilkan data tahun 2023 saat halaman pertama kali dimuat
+      filterTahun();
+    </script>
+    <script src="js/scripts.min.js"></script>
+    <script src="js/main.min.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>
