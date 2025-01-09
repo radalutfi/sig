@@ -1,12 +1,5 @@
 <!DOCTYPE html>
 
-<!-- 
-  Theme Name: Enlight
-  Theme URL: https://probootstrap.com/enlight-free-education-responsive-bootstrap-website-template
-  Author: ProBootstrap.com
-  Author URL: https://probootstrap.com
-  License: Released for free under the Creative Commons Attribution 3.0 license (probootstrap.com/license)
--->
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -28,10 +21,7 @@
     <link rel="stylesheet" href="css/style.min.css" />
     <link rel="stylesheet" href="css/custom.css" />
 
-    <!--[if lt IE 9]>
-      <script src="js/vendor/html5shiv.min.js"></script>
-      <script src="js/vendor/respond.min.js"></script>
-    <![endif]-->
+   
   </head>
   <body>
     <div class="probootstrap-search" id="probootstrap-search">
@@ -49,7 +39,6 @@
     </div>
 
     <div class="probootstrap-page-wrapper">
-      <!-- Fixed navbar -->
       <div class="container">
         <div class="navbar-header">
           <div class="btn-more js-btn-more visible-xs">
@@ -139,7 +128,6 @@
       <section class="probootstrap-section">
         <div class="container">
           <div class="row">
-            <!-- Kolom pertama untuk iframe dan screenshot 2022 -->
             <div class="col-md-6 col-12 mb-4">
               <div class="probootstrap-iframe-wrapper probootstrap-animate">
                 <iframe
@@ -154,8 +142,6 @@
                 </div>
               </div>
             </div>
-
-            <!-- Kolom kedua untuk iframe dan screenshot 2023 -->
             <div class="col-md-6 col-12 mb-4">
               <div class="probootstrap-iframe-wrapper probootstrap-animate">
                 <iframe
@@ -188,7 +174,6 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <!-- Data tahun 2023 -->
                   <tr data-tahun="2023">
                     <td>1</td>
                     <td>Ambarawa</td>
@@ -341,8 +326,6 @@
                     <td>2</td>
                     <td>11</td>
                   </tr>
-
-                  <!-- Data tahun 2022 -->
                   <tr data-tahun="2022">
                     <td>1</td>
                     <td>Ambarawa</td>
@@ -539,11 +522,9 @@
               </div>
             </div>
           </div>
-          <!-- END row -->
         </div>
       </footer>
     </div>
-    <!-- END wrapper -->
 
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
@@ -566,12 +547,10 @@
           }
         });
 
-        // Menginisialisasi ulang DataTables setelah filter
         $("#dataKerusakan").DataTable().destroy();
         $("#dataKerusakan").DataTable();
       }
 
-      // Inisialisasi untuk menampilkan data tahun 2023 saat halaman pertama kali dimuat
       filterTahun();
     </script>
     <script src="js/scripts.min.js"></script>
