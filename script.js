@@ -1,10 +1,7 @@
-// script.js
-// Fungsi untuk menampilkan data JSON dalam tabel HTML
 function displayData(data) {
   const tbody = document.getElementById("data-body");
-  tbody.innerHTML = ""; // Menghapus konten lama jika ada
+  tbody.innerHTML = ""; 
 
-  // Menambahkan baris untuk setiap item dalam data
   data.forEach((item) => {
     const row = document.createElement("tr");
     row.innerHTML = `
@@ -19,7 +16,6 @@ function displayData(data) {
   });
 }
 
-// Memanggil fungsi displayData setelah file data.js dimuat
 window.onload = function () {
-  displayData(data); // Memanggil data yang telah didefinisikan dalam file data.js
+  displayData(data); 
 };
